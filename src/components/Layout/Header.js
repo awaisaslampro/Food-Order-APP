@@ -1,14 +1,14 @@
 import { Fragment } from "react";
-
-const Header = () => {
+import classes from "./Header.module.css";
+import HeaderCartButton from "./HeaderCartButton";
+const Header = (props) => {
     return<Fragment>
-<header>
+<header className={classes.header}>
     <h1>RioMeals</h1>
-
-    <button>Cart</button>
+    <HeaderCartButton/>
 </header>
-<div>
-    <img src="https://www.pngall.com/wp-content/uploads/5/Buffet-PNG-Pic.png" alt="a delicious meals"/>
+<div className={classes['main-image']}>
+    <img src="https://raw.githubusercontent.com/academind/react-complete-guide-code/11-practice-food-order-app/extra-files/meals.jpg" alt="a delicious meals"/>
 </div>
         </Fragment>;
 
